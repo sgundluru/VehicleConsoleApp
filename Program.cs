@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            IVehicle vehicle = new Vehicle();
+            VehicleController vehicleController = new VehicleController(vehicle);
+            vehicleController.Run();
         }
     }
 }
